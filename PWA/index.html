@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- adding "viewport-fit-cover" to access all available viewport for display -->
+    <meta name="viewport" content="width=device-width,viewport-fit=cover">
+    <title> Devpad Masters | Store learning Goals</title>
+
+    <!-- links the html to the web app manifest before it can be seen on the browser application -->
+    <link rel="manifest" href="app.webmanifest?1">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script> 
+    <script src="sw-register.js"></script>
+    <!-- Adding theme-color from the webmanifest -->
+    <meta name="theme-color" content="#ffc252">
+    <link rel="apple-touch-icon" href="icons/icon-512.png">
+</head>
+
+<body>
+    <h1>DevPad Masters</h1>
+    <form>
+        <textarea placeholder="Enter your new note"></textarea>
+        <ul id="toolbar">
+            <li>
+                <button type="submit">
+                    <span class="icon">save</span>                
+                    Save
+                </button>
+            </li>
+        </ul>
+    </form>
+    <ul id="toolbar">
+        <li>
+            <button id="btnLearn">
+                <span class="icon">school</span>                
+                Learn                 
+            </button>
+        </li>
+        <li>
+            <button id="btnShare">
+                <span class="icon">share</span>                
+                Share                 
+            </button>
+        </li>
+        <li id="itemInstall">
+            <button id="btnInstall">
+                <span class="icon">download</span>                
+                Install                 
+            </button>
+        </li>
+    </ul>
+    <ul id="notes">
+
+
+    </ul>
+</body>
+</html>
